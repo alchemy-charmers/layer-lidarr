@@ -1,0 +1,4 @@
+#!/bin/bash
+
+systemctl start lidarr.service
+juju-log -l "INFO" Lidarr started

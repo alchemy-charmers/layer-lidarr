@@ -1,0 +1,4 @@
+#!/bin/bash
+
+systemctl restart lidarr.service
+juju-log -l "INFO" Lidarr restarted

@@ -1,0 +1,12 @@
+disable-indexers:
+  description: Turn off searching of indexers (both RSS and manual search)
+enable-indexers:
+  description: Turn on searching of indexer (both RSS and manual search)s
+disable-auth:
+  description: Turn off authentication
+start:
+  description: Start Lidarr service
+stop:
+  description: Stop Lidarr service
+restart:
+  description: Restart Lidarr service

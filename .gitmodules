@@ -1,0 +1,30 @@
+[submodule "interfaces/interface-reverseproxy"]
+	path = interfaces/interface-reverseproxy
+	url = https://github.com/pirate-charmers/interface-reverseproxy
+[submodule "interfaces/interface-plex-info"]
+	path = interfaces/interface-plex-info
+	url = https://github.com/chris-sanders/interface-plex-info
+[submodule "interfaces/interface-usenet-downloader"]
+	path = interfaces/interface-usenet-downloader
+	url = https://github.com/chris-sanders/interface-usenet-downloader
+[submodule "layers/layer-version"]
+	path = layers/layer-version
+	url = https://github.com/pirate-charmers/layer-version
+[submodule "layers/layer-hostname"]
+	path = layers/layer-hostname
+	url = https://github.com/chris-sanders/layer-hostname
+[submodule "layers/layer-backup"]
+	path = layers/layer-backup
+	url = https://github.com/chris-sanders/layer-backup
+[submodule "layers/layer-service-account"]
+	path = layers/layer-service-account
+	url = https://github.com/pirate-charmers/layer-service-account
+[submodule "interface-plex-info"]
+	path = interface-plex-info
+	url = https://github.com/chris-sanders/interface-plex-info
+[submodule "interface-reverseproxy"]
+	path = interface-reverseproxy
+	url = https://github.com/pirate-charmers/interface-reverseproxy
+[submodule "interface-usenet-downloader"]
+	path = interface-usenet-downloader
+	url = https://github.com/chris-sanders/interface-usenet-downloader

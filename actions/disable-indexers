@@ -1,0 +1,10 @@
+#!/usr/local/sbin/charm-env python3
+
+import sys
+sys.path.append('lib')
+
+from lib_lidarr import LidarrHelper 
+
+lidarr = LidarrHelper()
+
+lidarr.set_indexers(False)

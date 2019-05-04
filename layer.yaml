@@ -1,0 +1,24 @@
+includes:
+  - 'layer:basic'
+  - 'layer:service-account'
+  - 'layer:version'
+  - 'layer:hostname'
+  - 'layer:backup'
+  - 'interface:usenet-downloader'
+  - 'interface:plex-info'
+  - 'interface:reverseproxy'
+repo: git@github.com:pirate-charmers/layer-lidarr.git
+options:
+  backup:
+    backup-method: "sync"
+    backup-files: |-
+      /home/{lidarr-user}/.config/Liddarr/Backups/scheduled
+  service-account:
+    users:
+      - 'lidarr'
+    groups:
+      - 'lidarr'
+    membership:
+      - 'lidarr': ['lidarr']
+  version:
+    file_name: "repo-info"
