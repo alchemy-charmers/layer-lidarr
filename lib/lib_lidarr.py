@@ -138,12 +138,12 @@ class LidarrHelper:
             settings = {"host": hostname, "port": port, "username": user or "", "password": passwd or "",
                         "updateLibrary": True, "useSsl": False, "isValid": True}
             c.execute('''INSERT INTO Notifications
-                      (Name,OnGrab,onDownload,Settings,Implementation,ConfigContract,OnUpgrade,Tags,OnRename)
-                      VALUES (?,?,?,?,?,?,?,?,?)''', ("Plex", 0, 1,
-                                                      json.dumps(settings),
-                                                      "PlexServer",
-                                                      "PlexServerSettings", 1, None,
-                                                      1))
+                      (Name,OnGrab,Settings,Implementation,ConfigContract,OnUpgrade,Tags,OnRename,OnReleaseImport,OnHealthIssue,IncludeHealthWarnings,OnDownloadFailure,OnImportFailure,OnTrackRetag)
+                      VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)''', ("Plex", 0,
+                                                                json.dumps(settings),
+                                                                "PlexServer",
+                                                                "PlexServerSettings", 1, None,
+                                                                1, 1, 1, 1, 1, 1, 1))
         conn.commit()
         host.service_start(self.service_name)
 
@@ -156,7 +156,7 @@ class LidarrHelper:
 
     def get_latest_release(self):
         '''
-        Gets the latest Linux tarball release of Lidarr 
+        Gets the latest Linux tarball release of Lidarr
         returns: None on error, URL on success
         '''
         github = Github()
