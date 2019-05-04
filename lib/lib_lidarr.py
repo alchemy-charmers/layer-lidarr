@@ -21,7 +21,7 @@ class LidarrHelper:
         self.mono_path = '/usr/bin/mono'
         self.home_dir = '/home/{}'.format(self.user)
         self.config_dir = self.home_dir + '/.config/Lidarr'
-        self.database_file = self.config_dir + '/nzbdrone.db'
+        self.database_file = self.config_dir + '/lidarr.db'
         self.config_file = self.config_dir + '/config.xml'
         self.service_name = 'lidarr.service'
         self.service_file = '/etc/systemd/system/' + self.service_name
@@ -103,7 +103,7 @@ class LidarrHelper:
                          (json.dumps(settings),))
         else:
             hookenv.log("Creating sabnzbd setting for Lidarr.", "INFO")
-            settings = {"musicCategory": "music", "port": port, "apiKey": apikey,
+            settings = {"musicCategory": "audio", "port": port, "apiKey": apikey,
                         "olderTvPriority": -100, "host": hostname, "useSsl": False, "recentTvPriority": -100}
             c.execute('''INSERT INTO DownloadClients
                       (Enable,Name,Implementation,Settings,ConfigContract) VALUES
