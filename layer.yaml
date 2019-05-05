@@ -11,7 +11,7 @@ repo: git@github.com:pirate-charmers/layer-lidarr.git
 options:
   basic:
     packages:
-      - 'fpcalc'
+      - 'libchromaprint-tools'
   backup:
     backup-method: "sync"
     backup-files: |-
