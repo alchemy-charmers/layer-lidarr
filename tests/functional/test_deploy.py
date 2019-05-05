@@ -11,7 +11,7 @@ series = ['xenial',
           pytest.param('cosmic', marks=pytest.mark.xfail(reason='canary')),
           ]
 sources = [('local', '{}/builds/lidarr'.format(juju_repository)),
-           ('jujucharms', 'cs:~pirate-charmers/lidarr'),
+           ('jujucharms', 'cs:~ec0/lidarr'),
            ]
 
 
