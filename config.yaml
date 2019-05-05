@@ -22,7 +22,7 @@ options:
   proxy-url:
     type: string
     default: "/lidarr"
-    description: 'Urlbase for revrse proxy, must start with a "/"'
+    description: 'Urlbase for reverse proxy, must start with a "/"'
   proxy-group:
     type: string
     default: "lidarr"
