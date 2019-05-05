@@ -9,6 +9,9 @@ includes:
   - 'interface:reverseproxy'
 repo: git@github.com:pirate-charmers/layer-lidarr.git
 options:
+  basic:
+    packages:
+      - 'fpcalc'
   backup:
     backup-method: "sync"
     backup-files: |-
